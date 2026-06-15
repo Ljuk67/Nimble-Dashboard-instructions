@@ -113,6 +113,11 @@ final class Nimble_Dashboard_Instructions {
 				),
 				__( 'Keep every uploaded image under 0.5 MB / 500 KB.', self::TEXT_DOMAIN ),
 				__( 'After editing important pages, check the result on desktop and mobile before publishing.', self::TEXT_DOMAIN ),
+				sprintf(
+					/* translators: %s is a support email hyperlink. */
+					__( 'Need any help? Ask me at %s.', self::TEXT_DOMAIN ),
+					$this->get_support_email_link_html()
+				),
 			)
 		);
 
@@ -184,6 +189,19 @@ final class Nimble_Dashboard_Instructions {
 			'<a href="%1$s" target="_blank" rel="noopener noreferrer">%2$s</a>',
 			esc_url( 'https://tinypng.com' ),
 			esc_html__( 'tinypng.com', self::TEXT_DOMAIN )
+		);
+	}
+
+	/**
+	 * Return support email hyperlink HTML.
+	 *
+	 * @return string
+	 */
+	private function get_support_email_link_html() {
+		return sprintf(
+			'<a href="%1$s" target="_blank" rel="noopener noreferrer">%2$s</a>',
+			esc_url( 'mailto:lukas@nimble.help' ),
+			esc_html__( 'lukas@nimble.help', self::TEXT_DOMAIN )
 		);
 	}
 
