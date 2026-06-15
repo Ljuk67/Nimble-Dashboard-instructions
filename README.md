@@ -14,6 +14,6 @@ Reusable WordPress admin plugin by Nimble.Help.
 This plugin includes Git Updater headers:
 
 - `GitHub Plugin URI: https://github.com/Ljuk67/Nimble-Dashboard-instructions`
-- `Primary Branch: main`
+- `Primary Branch: master`
 
 Install [Git Updater](https://github.com/afragen/git-updater) on client sites to receive updates from this GitHub repository.
