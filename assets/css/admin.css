@@ -1,0 +1,192 @@
+:root {
+	--nimble-primary-color: #6565a7;
+	--nimble-primary-rgb: 101, 101, 167;
+	--nimble-text-color: #1d2327;
+	--nimble-muted-text-color: #4b5563;
+	--nimble-surface-color: #f8f8ff;
+	--nimble-card-color: #ffffff;
+	--nimble-border-color: #dcdcfa;
+	--nimble-warning-border: #d63638;
+	--nimble-warning-surface: #fff7ed;
+	--nimble-warning-text: #7a3d00;
+	--nimble-button-text: #ffffff;
+}
+
+.nimble-dashboard-instructions-banner {
+	margin: 16px 0 24px;
+	padding: 0;
+	border: 2px solid var(--nimble-primary-color);
+	border-radius: 8px;
+	background: linear-gradient(135deg, var(--nimble-card-color) 0%, var(--nimble-surface-color) 100%);
+	box-shadow: 0 8px 22px rgba(var(--nimble-primary-rgb), 0.12);
+}
+
+.nimble-dashboard-instructions-banner__content {
+	padding: 28px 30px;
+	color: var(--nimble-text-color);
+}
+
+.nimble-dashboard-instructions-banner__eyebrow {
+	display: inline-flex;
+	margin-bottom: 12px;
+	padding: 6px 10px;
+	border-radius: 4px;
+	background: rgba(var(--nimble-primary-rgb), 0.1);
+	color: var(--nimble-primary-color);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.nimble-dashboard-instructions-banner__title {
+	margin: 0 0 10px;
+	color: var(--nimble-text-color);
+	font-size: 30px !important;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.nimble-dashboard-instructions-banner__lead {
+	max-width: 820px;
+	margin: 0 0 18px;
+	color: var(--nimble-muted-text-color);
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+.nimble-dashboard-instructions-banner__list {
+	display: grid;
+	gap: 10px;
+	max-width: 980px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nimble-dashboard-instructions-banner__list li {
+	position: relative;
+	margin: 0;
+	padding-left: 22px;
+	font-size: 15px;
+	line-height: 1.55;
+}
+
+.nimble-dashboard-instructions-banner__list li::before {
+	content: "";
+	position: absolute;
+	top: 0.55em;
+	left: 0;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: var(--nimble-primary-color);
+	box-shadow: 0 0 0 4px rgba(var(--nimble-primary-rgb), 0.13);
+}
+
+.nimble-dashboard-instructions-media-notice {
+	margin: 18px 0 16px;
+	padding: 14px 16px;
+	border-left-width: 5px;
+	border-left-color: var(--nimble-warning-border);
+	background: var(--nimble-warning-surface);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.nimble-dashboard-instructions-media-notice p {
+	margin: 0;
+	color: var(--nimble-warning-text);
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.nimble-dashboard-instructions-modal-notice {
+	margin: 0 0 16px;
+	padding: 13px 15px;
+	border-left: 5px solid var(--nimble-warning-border);
+	border-radius: 6px;
+	background: var(--nimble-warning-surface);
+	box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.nimble-dashboard-instructions-modal-notice p {
+	margin: 0;
+	color: var(--nimble-warning-text);
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.uploader-inline-content .upload-ui .nimble-dashboard-instructions-modal-notice {
+	max-width: 460px;
+	margin: 0 auto 20px;
+	text-align: left;
+}
+
+#adminmenu #menu-dashboard > a,
+#adminmenu #menu-dashboard.wp-has-current-submenu > a,
+#adminmenu #menu-dashboard.current > a,
+#adminmenu #menu-posts > a,
+#adminmenu #menu-posts.wp-has-current-submenu > a,
+#adminmenu #menu-posts.current > a,
+#adminmenu #menu-media > a,
+#adminmenu #menu-media.wp-has-current-submenu > a,
+#adminmenu #menu-media.current > a,
+#adminmenu #menu-pages > a,
+#adminmenu #menu-pages.wp-has-current-submenu > a,
+#adminmenu #menu-pages.current > a {
+	background: var(--nimble-primary-color);
+	color: var(--nimble-button-text);
+}
+
+#adminmenu #menu-dashboard > a .wp-menu-image::before,
+#adminmenu #menu-dashboard.wp-has-current-submenu > a .wp-menu-image::before,
+#adminmenu #menu-dashboard.current > a .wp-menu-image::before,
+#adminmenu #menu-posts > a .wp-menu-image::before,
+#adminmenu #menu-posts.wp-has-current-submenu > a .wp-menu-image::before,
+#adminmenu #menu-posts.current > a .wp-menu-image::before,
+#adminmenu #menu-media > a .wp-menu-image::before,
+#adminmenu #menu-media.wp-has-current-submenu > a .wp-menu-image::before,
+#adminmenu #menu-media.current > a .wp-menu-image::before,
+#adminmenu #menu-pages > a .wp-menu-image::before,
+#adminmenu #menu-pages.wp-has-current-submenu > a .wp-menu-image::before,
+#adminmenu #menu-pages.current > a .wp-menu-image::before {
+	color: var(--nimble-button-text);
+}
+
+#adminmenu #menu-dashboard:hover > a,
+#adminmenu #menu-posts:hover > a,
+#adminmenu #menu-media:hover > a,
+#adminmenu #menu-pages:hover > a {
+	background: #55558f;
+	color: var(--nimble-button-text);
+}
+
+#adminmenu #menu-dashboard.wp-has-current-submenu .wp-menu-arrow div,
+#adminmenu #menu-dashboard.current .wp-menu-arrow div,
+#adminmenu #menu-posts.wp-has-current-submenu .wp-menu-arrow div,
+#adminmenu #menu-posts.current .wp-menu-arrow div,
+#adminmenu #menu-media.wp-has-current-submenu .wp-menu-arrow div,
+#adminmenu #menu-media.current .wp-menu-arrow div,
+#adminmenu #menu-pages.wp-has-current-submenu .wp-menu-arrow div,
+#adminmenu #menu-pages.current .wp-menu-arrow div {
+	background: var(--nimble-primary-color);
+}
+
+@media (max-width: 782px) {
+	.nimble-dashboard-instructions-banner__content {
+		padding: 22px 20px;
+	}
+
+	.nimble-dashboard-instructions-banner__title {
+		font-size: 26px !important;
+	}
+
+	.nimble-dashboard-instructions-banner__lead,
+	.nimble-dashboard-instructions-banner__list li,
+	.nimble-dashboard-instructions-media-notice p,
+	.nimble-dashboard-instructions-modal-notice p {
+		font-size: 15px;
+	}
+}
