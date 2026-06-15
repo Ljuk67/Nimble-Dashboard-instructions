@@ -16,7 +16,7 @@ final class Nimble_Dashboard_Instructions {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.0.1';
 
 	/**
 	 * Plugin text domain.

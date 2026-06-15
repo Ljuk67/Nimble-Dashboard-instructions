@@ -5,7 +5,7 @@
  * GitHub Plugin URI: https://github.com/Ljuk67/Nimble-Dashboard-instructions
  * Primary Branch: master
  * Description: Displays reusable Nimble.Help dashboard instructions and image-optimization reminders in the media library and upload modal.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Nimble.Help
  * Author URI:  https://nimble.help/
  * Text Domain: nimble-dashboard-instructions
