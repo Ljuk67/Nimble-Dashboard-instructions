@@ -88,17 +88,24 @@
 	margin: 18px 0 16px;
 	padding: 14px 16px;
 	border-left-width: 5px;
-	border-left-color: var(--nimble-warning-border);
-	background: var(--nimble-warning-surface);
+	border-left-color: #7f1d1d;
+	background: #b42318;
 	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
 .nimble-dashboard-instructions-media-notice p {
 	margin: 0;
-	color: var(--nimble-warning-text);
+	color: #ffffff;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 1.5;
+}
+
+.nimble-dashboard-instructions-media-notice a,
+.nimble-dashboard-instructions-media-notice a:hover,
+.nimble-dashboard-instructions-media-notice a:focus {
+	color: #ffffff;
+	text-decoration: underline;
 }
 
 .nimble-dashboard-instructions-modal-notice {
